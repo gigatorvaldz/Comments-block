@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c71dc04ccd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="comment-form__wrapper">
+        <form class="comment-form">
+          <div class="input-section">
+            <div class="input-container">
+              <label for="name">Your Name:</label>
+              <input
+                class="input-form"
+                data-required="true"
+                data-max-length="16"
+                data-min-length="3"
+                name="name"
+                id="name"
+                type="text"
+              />
+            </div>
+            <div class="input-container">
+              <label for="comment">Your Comment:</label>
+              <input
+                class="input-form"
+                data-required="true"
+                name="comment"
+                id="comment"
+                data-max-length="128"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <input class="input-form" type="date" name="date" id="date" />
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="comments-container"><h2>Comments:</h2></div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
